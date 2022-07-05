@@ -1,0 +1,448 @@
+
+/* Helpers =================================================== */
+/* .align-c {
+  text-align: center !important;
+}
+.align-l {
+  text-align: left !important;
+}
+.align-r {
+  text-align: right !important;
+}
+.nopad-t {
+  padding-top: 0 !important;
+}
+.nopad-b {
+  padding-bottom: 0 !important;
+}
+.nopad {
+  padding: 0 !important;
+}
+.margin-b {
+  margin-bottom: 7.68rem !important;
+}
+.margin-bs {
+  margin-bottom: 2.4rem !important;
+}
+.nomargin {
+  margin: 0 !important;
+}
+.noborder {
+  border: none !important;
+}
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+span.text-wide {
+  display: none;
+}
+.pad {
+  text-align: left;
+  padding: 2.4rem 0px;
+  padding-bottom: 0px;
+}
+.pad.side {
+  padding: 0px;
+} */
+/* Page =================================================== */
+html {
+  background: #ffffff;
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  margin: 0;
+  color: #333333;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+/* Sections */
+section.light,
+section.main {
+  overflow: hidden;
+  border-top: #ffffff solid 1px;
+  padding: 6.4rem 3.2rem;
+}
+.about section.light:last-child,
+.about section.main:last-child,
+.featured section.light:last-child,
+.featured section.main:last-child {
+  padding-bottom: 12.8rem;
+}
+section.dark,
+section.noise {
+  background: #fafafa;
+  border-bottom: #dddddd solid 1px;
+  padding: 6.4rem 3.2rem;
+}
+.about section.dark:last-child,
+.about section.noise:last-child,
+.featured section.dark:last-child,
+.featured section.noise:last-child {
+  padding-bottom: 12.8rem;
+}
+section.dark {
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+section.noise {
+  border: none;
+}
+section.main {
+  background: none;
+  border: none;
+  border-bottom: #dddddd solid 1px;
+}
+section.light {
+  /*.inner-shadow(0px, 30px, 30px, -30px, rgba(0,0,0,0.05));*/
+  border-bottom: #dddddd solid 1px;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+  height: auto;
+}
+img.major {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+img.shadow {
+  border: #dddddd solid 1px;
+}
+img.icon {
+  margin-bottom: 0.8rem !important;
+}
+
+/* Homepage Half Face */
+.face {
+  width: 100%;
+  position: relative;
+  /* Show default image */
+  /* Descriptions */
+  /* Inline media queries */
+  /* Full sliding half face experience */
+}
+.face .face-img {
+  display: block;
+  margin: 0px;
+}
+.face a {
+  color: #757575;
+  text-decoration: none;
+}
+.face .coder,
+.face .designer {
+  position: absolute;
+  width: 40%;
+  display: block;
+  z-index: 10;
+  height: 20%;
+  /* vertical centering */
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.face .coder h1,
+.face .designer h1 {
+  display: none;
+}
+.face .designer {
+  left: 0;
+}
+.face .coder {
+  right: 0;
+  text-align: right;
+}
+.face .designer-img,
+.face .coder-img,
+.face .designer-bg,
+.face .coder-bg,
+.face .coder p,
+.face .designer p {
+  display: none;
+}
+@media only screen and (min-width: 320px) {
+  .face .coder h1,
+  .face .designer h1 {
+    display: block;
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+  .face .coder h1 span,
+  .face .designer h1 span {
+    line-height: 1;
+  }
+  .face .coder h1 span.chevron-left,
+  .face .designer h1 span.chevron-left {
+    padding: 0 0.1em 0 0;
+  }
+  .face .coder h1 span.chevron-right,
+  .face .designer h1 span.chevron-right {
+    padding: 0 0 0 0.14em;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 46px;
+    font-size: 4.6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .face .coder,
+  .face .designer {
+    width: 30%;
+    height: 44%;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 56px;
+    font-size: 5.6rem;
+  }
+  .face .coder p,
+  .face .designer p {
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .face .coder,
+  .face .designer {
+    width: 32%;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 64px;
+    font-size: 6.4rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .face .coder,
+  .face .designer {
+    width: 30%;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 72px;
+    font-size: 7.2rem;
+  }
+  .face .coder p,
+  .face .designer p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .face {
+    width: 1040px;
+    height: 600px;
+    position: relative;
+    /* Face images */
+    /* Background images */
+    /* Hide default image with no effects */
+  }
+  .face .coder,
+  .face .designer {
+    width: 520px;
+    height: 600px;
+    top: 0px;
+    position: absolute;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 82px;
+    font-size: 8.2rem;
+  }
+  .face .coder .description,
+  .face .designer .description {
+    position: absolute;
+    top: 180px;
+    width: 280px;
+  }
+  .face .coder .arrow,
+  .face .designer .arrow {
+    width: 85px;
+    height: 140px;
+    background: url(../images/images-sprite.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 20px;
+  }
+  .face .coder {
+    text-align: left;
+    right: 0px;
+  }
+  .face .coder .description {
+    right: 0px;
+  }
+  .face .coder .arrow {
+    right: 0px;
+    background-position: 0px -751px;
+  }
+  .face .designer {
+    left: 0px;
+  }
+  .face .designer .description {
+    left: 0px;
+  }
+  .face .designer .arrow {
+    left: 0px;
+    background-position: 0px -892px;
+  }
+  .face .designer-img,
+  .face .coder-img {
+    width: 420px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    background: url(../images/images-sprite-home.png) 0 0 no-repeat;
+    display: block;
+    z-index: 1;
+  }
+  .face .designer-img {
+    background-position: 0px -600px;
+    left: 100px;
+  }
+  .face .coder-img {
+    background-position: 100% 0px;
+    right: 100px;
+  }
+  .face .designer-bg,
+  .face .coder-bg {
+    width: 420px;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    background: url(../images/images-sprite-home.png) 0 -1300px no-repeat;
+    display: block;
+  }
+  .face .designer-bg {
+    left: 100px;
+  }
+  .face .coder-bg {
+    right: 100px;
+    background-position: 100% -1300px;
+  }
+  .face .face-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  
+  section.light,
+  section.dark,
+  section.noise,
+  section.main {
+    padding: 4rem 4.3rem;
+  }
+
+  
+}
+@media only screen and (min-width: 1024px) {
+  header nav {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .row,
+  .content .row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .row.alt [class^="col-"] {
+    float: right;
+    margin: 0 0 0 3.84615385%;
+  }
+  [class^="col-"] {
+    float: left;
+    margin: 0 3.84615385% 0 0;
+    list-style: none;
+    position: relative;
+  }
+  [class^="col-"]:last-child,
+  .row.alt [class^="col-"]:last-child {
+    margin: 0;
+  }
+  .col-1 {
+    width: 4.80769231%;
+  }
+  .col-2 {
+    width: 13.46153846%;
+  }
+  .col-3 {
+    width: 22.11538462%;
+  }
+  .col-4 {
+    width: 30.76923077%;
+  }
+  .col-5 {
+    width: 39.42307692%;
+  }
+  .col-6 {
+    width: 48.07692308%;
+  }
+  .col-7 {
+    width: 56.73076923%;
+  }
+  .col-8 {
+    width: 65.38461538%;
+  }
+  .col-9 {
+    width: 74.03846154%;
+  }
+  .col-10 {
+    width: 82.69230769%;
+  }
+  .col-11 {
+    width: 91.34615385%;
+  }
+  .col-12 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
