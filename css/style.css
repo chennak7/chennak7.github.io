@@ -297,15 +297,7 @@ img.icon {
     top: 180px;
     width: 280px;
   }
-  .face .coder .arrow,
-  .face .designer .arrow {
-    width: 85px;
-    height: 140px;
-    background: url(../images/images-sprite.png) no-repeat;
-    display: block;
-    position: absolute;
-    top: 20px;
-  }
+  
   .face .coder {
     text-align: left;
     right: 0px;
@@ -333,7 +325,7 @@ img.icon {
     height: 600px;
     position: absolute;
     top: 0;
-    background: url(../images/images-sprite-home.png) 0 0 no-repeat;
+    background: url(../images/chenna-home.png) 0 0 no-repeat;
     display: block;
     z-index: 1;
   }
@@ -351,7 +343,7 @@ img.icon {
     height: 200px;
     position: absolute;
     bottom: 0px;
-    background: url(../images/images-sprite-home.png) 0 -1300px no-repeat;
+    background: url(../images/chenna-home.png) 0 -1300px no-repeat;
     display: block;
   }
   .face .designer-bg {
@@ -372,7 +364,7 @@ img.icon {
   section.dark,
   section.noise,
   section.main {
-    padding: 6rem 4.3rem;
+    padding: 6rem 0.3rem;
     padding-bottom: inherit;
       
   }
