@@ -72,7 +72,7 @@ section.light,
 section.main {
   overflow: hidden;
   border-top: #ffffff solid 1px;
-  padding: 6.4rem 3.2rem;
+  padding: 6.4rem 0.2rem;
 }
 .about section.light:last-child,
 .about section.main:last-child,
