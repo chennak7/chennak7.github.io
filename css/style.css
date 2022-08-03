@@ -366,13 +366,15 @@ img.icon {
   }
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 360px) {
   
   section.light,
   section.dark,
   section.noise,
   section.main {
-    padding: 4rem 4.3rem;
+    padding: 6rem 4.3rem;
+    padding-bottom: inherit;
+      
   }
 
   
@@ -381,6 +383,7 @@ img.icon {
   header nav {
     font-size: 18px;
     font-size: 1.8rem;
+    padding-bottom: inherit;
   }
   p {
     font-size: 18px;
